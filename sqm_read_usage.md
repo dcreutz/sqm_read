@@ -7,7 +7,7 @@ Standard usage:
 ./sqm_read.php <IP or Hostname> [options]
 ```
 
-By default, it will return the msas reading.
+By default, it will return the current msas reading.
 
 ## Options
 

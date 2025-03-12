@@ -9,12 +9,14 @@ Currently only SQM-LE devices are supported.
 ## Reading the SQM
 
 The sqm_read.php script reads an SQM-LE device:
+
 ```./read_sqm.php 192.168.1.100```
-would output the msas reading of the SQM-LE device with IP address 192.168.1.100 (hostnames and IP addresses are allowed).  See the [sqm_read.php usage](sqm_read_usage.md) for options.
+
+will output the msas reading of the SQM-LE device with IP address 192.168.1.100 (hostnames and IP addresses are allowed).  See the [sqm_read.php usage](sqm_read_usage.md) for options.
 
 ## Collecting data
 
-The sqm_read_to_file.php script reads an SQM device and stores the reading in a data file formatted according to the international standard (it will create the file if it does not exist).  It can be run directly from the command line but is intended to be automated via crom or systemd.
+The sqm_read_to_file.php script reads an SQM device and stores the reading in a data file formatted according to the international standard (it will create the file if it does not exist, complete with the required headers).  It can be run directly from the command line but is intended to be automated via crom or systemd.
 
 ## Installation
 
@@ -25,7 +27,11 @@ The sqm_read_to_file.php script reads an SQM device and stores the reading in a 
 3. Edit config.php to enter information about your SQM device.  At the minimum, enter the hostname or IP address.
 
 4. [Optional] Create a cron job to peridoically take readings.  Run the command
-```crontab -e``` and add the following line
+
+```crontab -e``` 
+
+and add the following line
+
 ```
 */5 * * * * cd sqm_read; ./sqm_read_to_file.php >> log/sqm_read.log 2&>1
 ```
