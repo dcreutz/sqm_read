@@ -20,7 +20,7 @@ The sqm_read_to_file.php script reads an SQM device and stores the reading in a 
 
 ## Installation
 
-1. [Download sqm_read](https://github.com/dcreutz/SQM-Visualizer/releases/download/v0.1alpha/sqm_read.tar.gz).
+1. [Download sqm_read](https://github.com/dcreutz/sqm_read/releases/download/v0.1alpha/sqm_read.tar.gz).
 
 2. Extract the .tar.gz file.
 
@@ -41,6 +41,6 @@ If you would prefer the readings be more or less frequent than every 5 minutes, 
 
 ## sqm_read.php only
 
-If you just want the command line program to read the device, download [sqm_read.php.gz](https://github.com/dcreutz/SQM-Visualizer/releases/download/v0.1alpha/sqm_read.php.gz).
+If you just want the command line program to read the device, download [sqm_read.php.gz](https://github.com/dcreutz/sqm_read/releases/download/v0.1alpha/sqm_read.php.gz).
 
 There is no configuration required, simply (g)unzip it.
